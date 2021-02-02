@@ -7,10 +7,10 @@ on:
       - main
 
 jobs:
-hello-world:
-    runs-on: ubuntu-20.04
+    hello-world:
+        runs-on: ubuntu-20.04
 
-    steps:
-      - name: Say hello world
-        shell: bash
-        run: echo Welcome to the GitHub Actions workshop !
+        steps:
+          - name: Say hello world
+            shell: bash
+            run: echo Welcome to the GitHub Actions workshop !
