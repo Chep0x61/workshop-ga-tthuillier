@@ -6,18 +6,23 @@ on:
       - dev
       - main
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
     hello-world:
         runs-on: ubuntu-20.04
+
+        steps:
+          - name: Say hello world
+            run: echo Welcome to the GitHub Actions workshop !
+
     unit-test:
         runs-on: ubuntu-20.04
         container: docker://epitechcontent/epitest-docker
 
         steps:
-          - name: Say hello world
-            shell: bash
-            run: echo Welcome to the GitHub Actions workshop !
-
           - name: Checkout
             uses: actions/checkout@v2
 
