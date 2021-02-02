@@ -12,5 +12,5 @@ hello-world:
 
     steps:
       - name: Say hello world
-      shell: bash
-      run: echo Welcome to the GitHub Actions workshop !
+        shell: bash
+        run: echo Welcome to the GitHub Actions workshop !
